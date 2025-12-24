@@ -1,75 +1,73 @@
-# Nuxt Minimal Starter
+# Codex Arcanum
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Codex Arcanum is a full-stack Nuxt 4 application designed to demonstrate production-grade architecture, accessibility-first UI development, and hybrid rendering strategies.
 
-## Setup
+This project is intentionally scoped and structured to mirror real-world SaaS applications.
 
-Make sure to install dependencies:
+## Live Demo
 
-```bash
-# npm
-npm install
+🔗 [https://codex-arcanum.netlify.app](https://codex-arcanum.netlify.app)
 
-# pnpm
-pnpm install
+## Tech Stack
 
-# yarn
-yarn install
+- Nuxt 4
 
-# bun
-bun install
-```
+- Vue 3
 
-## Development Server
+- Vanilla CSS (with optional Tachyons utilities)
 
-Start the development server on `http://localhost:3000`:
+- PostgreSQL
 
-```bash
-# npm
-npm run dev
+- Prisma
 
-# pnpm
-pnpm dev
+- Zod
 
-# yarn
-yarn dev
+- Netlify
 
-# bun
-bun run dev
-```
+## Architecture Overview
 
-## Production
+Codex Arcanum is built using Nuxt’s full-stack capabilities:
 
-Build the application for production:
+- Server-rendered marketing and documentation pages
 
-```bash
-# npm
-npm run build
+- Authenticated application dashboard
 
-# pnpm
-pnpm build
+- API routes implemented via Nuxt server routes
 
-# yarn
-yarn build
+- Session-based authentication using HttpOnly cookies
 
-# bun
-bun run build
-```
+- A full architecture breakdown is available in /docs/architecture.md.
 
-Locally preview production build:
+- Rendering Strategy
 
-```bash
-# npm
-npm run preview
+- Different parts of the application use different rendering strategies:
 
-# pnpm
-pnpm preview
+- Public pages: Static Site Generation
 
-# yarn
-yarn preview
+- Documentation: Static generation with dynamic routing
 
-# bun
-bun run preview
-```
+- Dashboard: SSR + client-side hydration
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- APIs: Server routes with caching where appropriate
+
+## Accessibility
+
+- Accessibility is treated as a first-class concern.
+
+- WCAG 2.2 AA compliance
+
+- Keyboard-only navigation supported
+
+- Screen reader tested
+
+- Reduced motion preferences respected
+
+- Details: /docs/accessibility.md
+
+## Tradeoffs & Future Improvements
+
+- No real-time collaboration (intentional scope choice)
+
+- Limited theming options
+
+- Future: content versioning, audit logs, feature flags
