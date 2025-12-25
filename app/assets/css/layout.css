@@ -1,0 +1,33 @@
+:root {
+  --line-length: 65ch;
+  --padding: 1.5rem;
+}
+
+/* use content-box instead! */
+.app-shell {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  padding: var(--padding);
+  width: calc(var(--line-length) + (var(--padding) * 2));
+}
+
+.app-header,
+.app-footer {
+  padding: 1rem;
+  background: #f5f5f5;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app-main {
+  padding: 2rem;
+}
