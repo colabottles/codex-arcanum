@@ -8,8 +8,9 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  box-sizing: content-box;
   padding: var(--padding);
-  width: calc(var(--line-length) + (var(--padding) * 2));
+  width: var(--line-length);
 }
 
 .app-header,
